@@ -1251,6 +1251,882 @@ document.addEventListener('DOMContentLoaded', () => {
                     explanation: "Qualitative data describes qualities or characteristics. Quantitative data is numerical and involves measurements (quantities)."
                 }
             ]
+        },
+        // --- NEW QUIZZES START HERE ---
+        {
+            title: "Advanced Human Body",
+            data: [
+                {
+                    question: "What is the main role of the endocrine system?",
+                    options: ["To send nerve signals", "To produce and regulate hormones", "To circulate blood", "To digest food"],
+                    correctAnswer: 1,
+                    explanation: "The endocrine system is a network of glands that produce hormones to regulate metabolism, growth, sleep, and mood."
+                },
+                {
+                    question: "Which part of the digestive system is primarily responsible for absorbing water from undigested food?",
+                    options: ["Stomach", "Small Intestine", "Large Intestine", "Liver"],
+                    correctAnswer: 2,
+                    explanation: "The large intestine absorbs water and electrolytes from the remaining indigestible food matter and then passes useless waste material from the body."
+                },
+                {
+                    question: "What is the primary purpose of platelets in the blood?",
+                    options: ["To carry oxygen", "To fight infection", "To help blood clot", "To transport nutrients"],
+                    correctAnswer: 2,
+                    explanation: "Platelets are tiny blood cells that rush to the site of an injury to form a plug, or clot, to stop bleeding."
+                },
+                {
+                    question: "How do vaccines primarily work to protect you from diseases?",
+                    options: ["By killing existing viruses in the body", "By strengthening your muscles", "By introducing a weakened or inactive germ to trigger an immune response", "By providing extra vitamins"],
+                    correctAnswer: 2,
+                    explanation: "Vaccines train your immune system to recognize and fight off specific germs, so if you're exposed to the real germ later, your body is ready to destroy it."
+                },
+                {
+                    question: "The central nervous system (CNS) is made up of which two parts?",
+                    options: ["The heart and lungs", "The bones and muscles", "The brain and spinal cord", "The arteries and veins"],
+                    correctAnswer: 2,
+                    explanation: "The brain and spinal cord are the main processing centers for the nervous system, controlling all the functions of the body."
+                },
+                {
+                    question: "What are the essential building blocks of proteins?",
+                    options: ["Fatty acids", "Sugars", "Amino acids", "Vitamins"],
+                    correctAnswer: 2,
+                    explanation: "Amino acids are molecules that combine to form proteins. Your body uses them to build muscle, repair tissue, and perform many other functions."
+                },
+                {
+                    question: "Which type of nutrient is the body's main and quickest source of energy?",
+                    options: ["Proteins", "Fats", "Carbohydrates", "Minerals"],
+                    correctAnswer: 2,
+                    explanation: "Carbohydrates are broken down into glucose (sugar), which is the primary fuel for your body's cells, tissues, and organs."
+                },
+                {
+                    question: "What is the name of the muscular tube that carries food from the mouth to the stomach?",
+                    options: ["Trachea", "Esophagus", "Aorta", "Intestine"],
+                    correctAnswer: 1,
+                    explanation: "The esophagus uses waves of muscle contractions (peristalsis) to push food down into the stomach. The trachea is the windpipe."
+                },
+                {
+                    question: "Which organ in the body produces insulin, a hormone that regulates blood sugar?",
+                    options: ["Liver", "Kidney", "Spleen", "Pancreas"],
+                    correctAnswer: 3,
+                    explanation: "The pancreas produces insulin, which helps your body use sugar from carbohydrates for energy or to store for future use."
+                },
+                {
+                    question: "What are calories a measure of?",
+                    options: ["The weight of food", "The amount of vitamins in food", "The amount of energy in food", "The saltiness of food"],
+                    correctAnswer: 2,
+                    explanation: "A calorie is a unit of energy. Your body needs calories from food and drink to function properly."
+                },
+                {
+                    question: "The smallest bones in the human body, the malleus, incus, and stapes, are found where?",
+                    options: ["In the toes", "In the fingers", "In the ear", "In the nose"],
+                    correctAnswer: 2,
+                    explanation: "These three tiny bones (ossicles) are in the middle ear. They transmit sound vibrations from the eardrum to the inner ear."
+                },
+                {
+                    question: "Which of these is a primary function of the liver?",
+                    options: ["Pumping blood", "Filtering waste and toxins from the blood", "Producing insulin", "Absorbing nutrients"],
+                    correctAnswer: 1,
+                    explanation: "The liver has many jobs, but one of its most important is to act as a filter for your blood, removing harmful substances."
+                },
+                {
+                    question: "What is an antibiotic medication used to treat?",
+                    options: ["Viral infections like the flu", "Bacterial infections like strep throat", "All types of infections", "Allergies"],
+                    correctAnswer: 1,
+                    explanation: "Antibiotics work by killing bacteria or preventing them from reproducing. They are not effective against viruses."
+                },
+                {
+                    question: "What is the difference between the epidermis and the dermis?",
+                    options: ["They are two types of muscle", "They are two different bones", "They are the outer and inner layers of the skin", "They are parts of the eye"],
+                    correctAnswer: 2,
+                    explanation: "The epidermis is the outermost, protective layer of skin, while the dermis is the thicker layer beneath it, containing nerves and blood vessels."
+                },
+                {
+                    question: "What is the purpose of saliva in your mouth?",
+                    options: ["To cool down food", "To start the digestion of carbohydrates", "To make your teeth white", "To help you speak"],
+                    correctAnswer: 1,
+                    explanation: "Saliva contains enzymes that begin the chemical breakdown of food, and it also lubricates the food to make it easier to swallow."
+                },
+                {
+                    question: "What flexible connective tissue is found in your ears, nose, and at the ends of bones?",
+                    options: ["Tendon", "Ligament", "Cartilage", "Marrow"],
+                    correctAnswer: 2,
+                    explanation: "Cartilage is a tough but flexible tissue that acts as a cushion between bones at the joints and provides structure to other parts of the body."
+                },
+                {
+                    question: "What does your body's immune system do?",
+                    options: ["It helps you breathe", "It pumps your blood", "It defends your body against germs and disease", "It digests your food"],
+                    correctAnswer: 2,
+                    explanation: "The immune system is a complex network of cells, tissues, and organs that work together to protect the body from harmful invaders like bacteria and viruses."
+                },
+                {
+                    question: "What is pasteurization?",
+                    options: ["A way to make pasta", "A process of heating liquids to kill harmful germs", "A method for exercising", "A type of surgery"],
+                    correctAnswer: 1,
+                    explanation: "Named after Louis Pasteur, pasteurization is used on milk, juice, and other foods to make them safer to consume and extend their shelf life."
+                },
+                {
+                    question: "An infectious disease is one that is caused by:",
+                    options: ["Genetics", "Poor diet", "Pathogens like bacteria or viruses", "Old age"],
+                    correctAnswer: 2,
+                    explanation: "Infectious diseases can be passed from one person to another. Non-infectious diseases, like heart disease, cannot be spread this way."
+                },
+                {
+                    question: "What is the name of the body's largest artery, which carries blood from the heart?",
+                    options: ["Vena Cava", "Pulmonary Artery", "Aorta", "Femoral Artery"],
+                    correctAnswer: 2,
+                    explanation: "The aorta is the main and largest artery in the body, originating from the left ventricle of the heart and extending down to the abdomen."
+                }
+            ]
+        },
+        {
+            title: "Advanced Earth Science",
+            data: [
+                {
+                    question: "What is the theory of plate tectonics?",
+                    options: ["A theory that the Earth is flat", "A theory that Earth's outer shell is divided into plates that move", "A theory about how mountains are formed", "A theory about the Earth's core"],
+                    correctAnswer: 1,
+                    explanation: "Plate tectonics explains the large-scale motions of Earth's lithosphere, which is how continents drift, earthquakes happen, and volcanoes form."
+                },
+                {
+                    question: "What is the main cause of the Earth's ocean tides?",
+                    options: ["The wind", "The Earth's rotation", "The gravitational pull of the Moon and Sun", "Underwater earthquakes"],
+                    correctAnswer: 2,
+                    explanation: "The Moon's gravity pulls on the Earth's oceans, creating a bulge of water. As the Earth rotates, different areas pass through this bulge, causing high and low tides."
+                },
+                {
+                    question: "What is the difference between magma and lava?",
+                    options: ["Magma is hotter than lava", "They are made of different minerals", "Magma is molten rock beneath the Earth's surface; lava is on the surface", "Lava is solid, magma is liquid"],
+                    correctAnswer: 2,
+                    explanation: "It's all about location! When molten rock is underground, it's called magma. Once it erupts from a volcano, it's called lava."
+                },
+                {
+                    question: "What is a seismograph used to measure?",
+                    options: ["The speed of wind", "The depth of the ocean", "The vibrations of an earthquake", "The temperature of a volcano"],
+                    correctAnswer: 2,
+                    explanation: "A seismograph is an instrument that records the motion of the ground during an earthquake, allowing scientists to determine its strength and location."
+                },
+                {
+                    question: "How are caves like limestone caverns typically formed?",
+                    options: ["By wind erosion", "By ancient rivers carving them out", "By slightly acidic groundwater dissolving the rock over millions of years", "By volcanic activity"],
+                    correctAnswer: 2,
+                    explanation: "Rainwater picks up carbon dioxide from the air, forming a weak acid. This carbonic acid slowly dissolves limestone, creating vast underground cave systems."
+                },
+                {
+                    question: "What is an aquifer?",
+                    options: ["An underwater cave", "A type of cloud", "An underground layer of rock or sediment that holds groundwater", "A machine for cleaning water"],
+                    correctAnswer: 2,
+                    explanation: "Aquifers are a critical source of fresh water for many communities, which can be accessed by drilling wells."
+                },
+                {
+                    question: "The Mohs scale is used by geologists to measure a mineral's:",
+                    options: ["Weight", "Color", "Hardness", "Value"],
+                    correctAnswer: 2,
+                    explanation: "The Mohs scale of mineral hardness ranks minerals from 1 (softest, like Talc) to 10 (hardest, like Diamond) based on their ability to scratch one another."
+                },
+                {
+                    question: "What is a delta?",
+                    options: ["A deep part of the ocean", "A type of desert sand dune", "A landform created by the deposition of sediment at the mouth of a river", "A triangular-shaped mountain"],
+                    correctAnswer: 2,
+                    explanation: "As a river flows into a larger body of water like a lake or ocean, it slows down and drops the sediment it was carrying, building up a delta over time."
+                },
+                {
+                    question: "How do glaciers shape the landscape?",
+                    options: ["By melting and causing floods", "By pushing rocks and soil, carving out valleys and lakes", "By freezing the ground solid", "They do not affect the landscape"],
+                    correctAnswer: 1,
+                    explanation: "Massive glaciers act like giant bulldozers, scraping away rock and soil (erosion) and depositing it elsewhere, creating features like U-shaped valleys and moraines."
+                },
+                {
+                    question: "What is a geyser?",
+                    options: ["A small volcano that erupts mud", "A hot spring that periodically erupts, shooting a column of water and steam into the air", "A type of tornado", "An underground river"],
+                    correctAnswer: 1,
+                    explanation: "Geysers are formed when underground water is heated by magma and builds up pressure until it violently erupts through a vent on the surface."
+                },
+                {
+                    question: "What is the Mid-Atlantic Ridge?",
+                    options: ["A large bridge across the Atlantic", "A deep ocean trench", "An underwater mountain range where tectonic plates are spreading apart", "A shipping lane"],
+                    correctAnswer: 2,
+                    explanation: "This is a divergent plate boundary where new oceanic crust is formed as magma rises to the surface, pushing the continents of Europe/Africa and the Americas apart."
+                },
+                {
+                    question: "What is the process of desalination?",
+                    options: ["Removing pollution from the air", "Removing salt from seawater to make it drinkable", "Planting trees to stop desert growth", "Mapping the ocean floor"],
+                    correctAnswer: 1,
+                    explanation: "Desalination is an important technology for providing fresh water in arid regions of the world, though it can be energy-intensive."
+                },
+                {
+                    question: "What is the Coriolis effect?",
+                    options: ["The effect of the sun on the tides", "The way gravity changes with altitude", "The deflection of moving objects due to the Earth's rotation", "The process of rock formation"],
+                    correctAnswer: 2,
+                    explanation: "The Coriolis effect is why hurricanes and cyclones spin in different directions in the Northern and Southern Hemispheres."
+                },
+                {
+                    question: "What is the difference between a mineral and a rock?",
+                    options: ["Minerals are harder than rocks", "A mineral has a specific chemical composition, while a rock is made up of one or more minerals", "Minerals are valuable, rocks are not", "There is no difference"],
+                    correctAnswer: 1,
+                    explanation: "Think of minerals as the ingredients and rocks as the cake. A rock like granite is made up of different minerals like quartz, feldspar, and mica."
+                },
+                {
+                    question: "What is bioluminescence, as seen in some deep-sea creatures?",
+                    options: ["The ability to see in the dark", "The production and emission of light by a living organism", "A form of underwater communication", "The ability to withstand high pressure"],
+                    correctAnswer: 1,
+                    explanation: "Bioluminescence is created by a chemical reaction in an organism's body and is used for attracting prey, finding mates, or defense."
+                },
+                {
+                    question: "What is permafrost?",
+                    options: ["A type of winter storm", "A layer of soil, rock, or sediment that is frozen for more than two consecutive years", "A glacier that never melts", "The ice at the North Pole"],
+                    correctAnswer: 1,
+                    explanation: "Permafrost is found in polar regions and at high altitudes. Climate change is causing permafrost to thaw, which has significant environmental consequences."
+                },
+                {
+                    question: "The abyssal zone of the ocean is known for being:",
+                    options: ["Warm and full of coral reefs", "Shallow and near the coast", "Completely dark, with high pressure and cold temperatures", "A busy area for fishing"],
+                    correctAnswer: 2,
+                    explanation: "The abyssal zone is the pitch-black bottom layer of the ocean. Life here has adapted to survive in extreme conditions with no sunlight."
+                },
+                {
+                    question: "What is a continental shelf?",
+                    options: ["A deep trench in the ocean", "The edge of a continent that lies under the ocean", "A large glacier on land", "A type of rock formation"],
+                    correctAnswer: 1,
+                    explanation: "The continental shelf is the relatively shallow part of the ocean that extends from the coastline. It is rich in marine life."
+                },
+                {
+                    question: "What is the name for the supercontinent that existed millions of years ago?",
+                    options: ["Gondwana", "Laurasia", "Pangaea", "Eurasia"],
+                    correctAnswer: 2,
+                    explanation: "Pangaea was a supercontinent that incorporated almost all the landmasses on Earth before it began to break apart due to plate tectonics."
+                },
+                {
+                    question: "What is a 'fossil fuel'?",
+                    options: ["A type of renewable energy", "A fuel made from dinosaur bones", "A fuel formed from the remains of ancient plants and animals", "A fuel that does not cause pollution"],
+                    correctAnswer: 2,
+                    explanation: "Coal, oil, and natural gas are fossil fuels, formed over millions of years from the buried remains of living organisms."
+                }
+            ]
+        },
+        {
+            title: "Advanced Physical Science",
+            data: [
+                {
+                    question: "What is the difference between speed and velocity?",
+                    options: ["There is no difference", "Velocity includes direction, while speed does not", "Velocity is measured in km/h, speed is in m/s", "Speed is for cars, velocity is for planes"],
+                    correctAnswer: 1,
+                    explanation: "Speed is how fast an object is moving (e.g., 60 km/h). Velocity is speed in a specific direction (e.g., 60 km/h North)."
+                },
+                {
+                    question: "What is buoyancy?",
+                    options: ["The tendency of an object to sink", "The upward force exerted by a fluid that opposes the weight of an immersed object", "The measure of an object's weight", "The speed at which an object falls"],
+                    correctAnswer: 1,
+                    explanation: "Buoyancy is the force that makes ships float and balloons rise. An object floats if the buoyant force is greater than its weight."
+                },
+                {
+                    question: "Newton's First Law of Motion, the law of inertia, states that an object in motion will:",
+                    options: ["Eventually stop on its own", "Speed up over time", "Stay in motion with the same speed and direction unless acted upon by an unbalanced force", "Change direction randomly"],
+                    correctAnswer: 2,
+                    explanation: "This law also states that an object at rest will stay at rest. It's the reason you lurch forward in a car when it suddenly stops."
+                },
+                {
+                    question: "What is momentum?",
+                    options: ["The amount of energy an object has", "The force of gravity on an object", "The quantity of motion of a moving body, measured as a product of its mass and velocity", "The top speed of an object"],
+                    correctAnswer: 2,
+                    explanation: "A heavy truck moving slowly can have the same momentum as a light car moving quickly. It is a measure of how hard it is to stop an object."
+                },
+                {
+                    question: "What is static electricity?",
+                    options: ["Electricity that flows through wires", "A build-up of electric charge on the surface of an object", "The electricity in a battery", "A type of magnetism"],
+                    correctAnswer: 1,
+                    explanation: "Static electricity is what causes a balloon to stick to a wall after you rub it on your hair, or the shock you sometimes get from a doorknob."
+                },
+                {
+                    question: "What is the difference between a parallel circuit and a series circuit?",
+                    options: ["A parallel circuit is safer", "In a series circuit, there is only one path for the current; in a parallel circuit, there are multiple paths", "A series circuit uses more power", "There is no difference"],
+                    correctAnswer: 1,
+                    explanation: "This is why if one light bulb burns out in an old string of Christmas lights (a series circuit), they all go out. In your house (a parallel circuit), one bulb burning out doesn't affect the others."
+                },
+                {
+                    question: "The law of conservation of energy states that energy:",
+                    options: ["Can be created from nothing", "Can be completely destroyed", "Can be lost as heat", "Cannot be created or destroyed, only changed from one form to another"],
+                    correctAnswer: 3,
+                    explanation: "For example, when you drop a ball, its potential energy is converted into kinetic energy as it falls."
+                },
+                {
+                    question: "What is density?",
+                    options: ["How heavy an object is", "How large an object is", "The amount of mass per unit of volume", "The ability of an object to float"],
+                    correctAnswer: 2,
+                    explanation: "A block of lead is denser than a block of wood of the same size because it has more mass packed into the same volume."
+                },
+                {
+                    question: "What is terminal velocity?",
+                    options: ["The speed at which an object starts to fall", "The fastest possible speed in the universe", "The constant speed that a freely falling object eventually reaches when air resistance equals the force of gravity", "The speed needed to escape Earth's gravity"],
+                    correctAnswer: 2,
+                    explanation: "When a skydiver reaches terminal velocity, they stop accelerating and fall at a constant speed because the upward force of air resistance balances the downward force of gravity."
+                },
+                {
+                    question: "What is an electromagnet?",
+                    options: ["A naturally occurring magnetic rock", "A permanent magnet made of iron", "A magnet created by passing an electric current through a coil of wire", "A magnet that works on wood"],
+                    correctAnswer: 2,
+                    explanation: "Electromagnets are temporary and can be turned on and off. They are used in everything from scrapyard cranes to electric motors."
+                },
+                {
+                    question: "What is acceleration?",
+                    options: ["How fast something is going", "The rate of change of an object's velocity", "The top speed of an object", "The distance an object travels"],
+                    correctAnswer: 1,
+                    explanation: "Acceleration can mean speeding up, slowing down (deceleration), or changing direction."
+                },
+                {
+                    question: "What is surface tension?",
+                    options: ["The stress on the surface of a solid", "The property of the surface of a liquid that allows it to resist an external force", "The temperature of a liquid's surface", "The pressure deep inside a liquid"],
+                    correctAnswer: 1,
+                    explanation: "Surface tension is caused by the attraction of liquid molecules to each other and is why some insects can walk on water."
+                },
+                {
+                    question: "What is air resistance, or drag?",
+                    options: ["The force that pulls objects down", "The force that opposes the motion of an object through the air", "The weight of the air", "The speed of wind"],
+                    correctAnswer: 1,
+                    explanation: "Drag is a type of friction. It's why a parachute works and why a flat piece of paper falls slower than a crumpled one."
+                },
+                {
+                    question: "What is the difference between AC (Alternating Current) and DC (Direct Current)?",
+                    options: ["AC is more powerful than DC", "DC is used in homes, AC is for cars", "DC flows in one direction, while AC changes direction periodically", "AC is safer than DC"],
+                    correctAnswer: 2,
+                    explanation: "Batteries provide DC electricity. The power outlets in your home provide AC electricity."
+                },
+                {
+                    question: "What is the relationship between force, mass, and acceleration as described by Newton's Second Law?",
+                    options: ["Force = mass / acceleration", "Force = mass x acceleration (F=ma)", "Mass = force x acceleration", "They are not related"],
+                    correctAnswer: 1,
+                    explanation: "This famous equation means that it takes more force to accelerate a heavier object, and more force is needed for a greater acceleration."
+                },
+                {
+                    question: "What is centripetal force?",
+                    options: ["The force that pushes objects away from the center", "The force that keeps an object moving in a circular path", "The force of gravity", "A type of friction"],
+                    correctAnswer: 1,
+                    explanation: "When you swing a ball on a string, the tension in the string provides the centripetal force that keeps the ball moving in a circle."
+                },
+                {
+                    question: "In physics, what is 'work'?",
+                    options: ["Any activity that requires effort", "The amount of energy an object has", "When a force is applied to an object and causes it to move a distance", "The power of an engine"],
+                    correctAnswer: 2,
+                    explanation: "Scientifically, if you push against a wall, you are doing no work because the wall doesn't move. Work is only done when the force causes displacement."
+                },
+                {
+                    question: "What is a magnetic field?",
+                    options: ["A field where magnets are grown", "The area around a magnet where its magnetic force can be felt", "The metal part of a magnet", "A type of electric circuit"],
+                    correctAnswer: 1,
+                    explanation: "You can visualize a magnetic field by sprinkling iron filings on a piece of paper over a magnet; they will line up along the field lines."
+                },
+                {
+                    question: "What is the difference between potential and kinetic energy?",
+                    options: ["Potential is energy of motion, kinetic is stored energy", "Kinetic is energy of motion, potential is stored energy", "They are both types of heat energy", "There is no difference"],
+                    correctAnswer: 1,
+                    explanation: "A roller coaster at the top of a hill has maximum potential energy. As it goes down the hill, this is converted to kinetic energy."
+                },
+                {
+                    question: "What is sound insulation?",
+                    options: ["Making sounds louder", "The process of preventing sound from passing from one place to another", "A type of musical instrument", "Recording sound"],
+                    correctAnswer: 1,
+                    explanation: "Insulation materials are often soft and porous, which helps to absorb sound waves and prevent them from traveling through walls."
+                }
+            ]
+        },
+        {
+            title: "Advanced Astronomy",
+            data: [
+                {
+                    question: "What is a black hole?",
+                    options: ["A hole in space that leads to another dimension", "A dead star that emits no light", "A region of spacetime where gravity is so strong that nothing, not even light, can escape", "A dark-colored planet"],
+                    correctAnswer: 2,
+                    explanation: "Black holes are formed from the remnants of massive stars that have collapsed under their own gravity."
+                },
+                {
+                    question: "What is the main difference between a solar eclipse and a lunar eclipse?",
+                    options: ["Solar eclipses happen at night", "A solar eclipse is when the Moon blocks the Sun; a lunar eclipse is when the Earth's shadow covers the Moon", "Lunar eclipses are more common", "A lunar eclipse is when the Sun blocks the Moon"],
+                    correctAnswer: 1,
+                    explanation: "In a solar eclipse, the Moon is between the Sun and Earth. In a lunar eclipse, the Earth is between the Sun and Moon."
+                },
+                {
+                    question: "The asteroid belt is a region of space located between the orbits of which two planets?",
+                    options: ["Earth and Mars", "Mars and Jupiter", "Jupiter and Saturn", "Saturn and Uranus"],
+                    correctAnswer: 1,
+                    explanation: "The asteroid belt contains millions of asteroids of various sizes, remnants from the early formation of the solar system."
+                },
+                {
+                    question: "What is a supernova?",
+                    options: ["A very large star", "The powerful and luminous explosion of a star", "A new star being born", "A type of galaxy"],
+                    correctAnswer: 1,
+                    explanation: "A supernova occurs during the last stages of a massive star's life and can briefly outshine entire galaxies."
+                },
+                {
+                    question: "What makes a dwarf planet, like Pluto, different from a regular planet?",
+                    options: ["It is made of ice", "It does not have any moons", "It has not 'cleared its orbital neighborhood' of other objects", "It is smaller than Earth's Moon"],
+                    correctAnswer: 2,
+                    explanation: "According to the official definition, a planet must be large enough to have cleared its orbit of other debris. Pluto shares its orbital region with other objects in the Kuiper Belt."
+                },
+                {
+                    question: "What was the primary purpose of the Apollo missions in the 1960s and 70s?",
+                    options: ["To explore Mars", "To launch the Hubble Telescope", "To land humans on the Moon and return them safely to Earth", "To build the International Space Station"],
+                    correctAnswer: 2,
+                    explanation: "The Apollo program, run by NASA, successfully achieved this goal with Apollo 11 in 1969."
+                },
+                {
+                    question: "What are the auroras (like the Northern Lights) caused by?",
+                    options: ["Reflections from the polar ice caps", "Weather patterns in the upper atmosphere", "Charged particles from the solar wind interacting with Earth's magnetic field and atmosphere", "Satellites orbiting the Earth"],
+                    correctAnswer: 2,
+                    explanation: "These particles excite atoms in the upper atmosphere, causing them to glow in beautiful, colorful displays."
+                },
+                {
+                    question: "What is the difference between rotation and revolution in astronomy?",
+                    options: ["Rotation is moving in a circle, revolution is moving in a straight line", "Rotation is a planet spinning on its axis; revolution is a planet orbiting a star", "They mean the same thing", "Revolution is spinning, rotation is orbiting"],
+                    correctAnswer: 1,
+                    explanation: "Earth's rotation on its axis causes day and night (takes 24 hours). Earth's revolution around the Sun causes the seasons (takes 365 days)."
+                },
+                {
+                    question: "What is the International Space Station (ISS)?",
+                    options: ["A space telescope", "A base on the Moon", "A large, habitable artificial satellite in low Earth orbit", "A mission to Mars"],
+                    correctAnswer: 2,
+                    explanation: "The ISS is a multinational collaborative project and serves as a microgravity and space environment research laboratory."
+                },
+                {
+                    question: "What is the difference between a meteoroid, a meteor, and a meteorite?",
+                    options: ["They are different sizes", "They are made of different materials", "It depends on their location: meteoroid is in space, meteor is in the atmosphere, meteorite is on the ground", "There is no difference"],
+                    correctAnswer: 2,
+                    explanation: "A meteoroid is a space rock. When it enters Earth's atmosphere and burns up ('a shooting star'), it's a meteor. If any part of it survives and hits the ground, it's a meteorite."
+                },
+                {
+                    question: "What is the Oort Cloud believed to be?",
+                    options: ["A cloud of gas surrounding Jupiter", "A theoretical, vast spherical shell of icy objects surrounding the Solar System", "Another name for the Milky Way", "A type of nebula"],
+                    correctAnswer: 1,
+                    explanation: "The Oort Cloud is thought to be the origin of most long-period comets. It is extremely far from the Sun."
+                },
+                {
+                    question: "What is a red giant star?",
+                    options: ["A very young, hot star", "A star that is about to be born", "A dying star in a late stage of stellar evolution", "The largest type of star in the universe"],
+                    correctAnswer: 2,
+                    explanation: "In a few billion years, our own Sun will swell up to become a red giant as it runs out of hydrogen fuel in its core."
+                },
+                {
+                    question: "The Kuiper Belt is a region of the solar system beyond the planets, extending from the orbit of:",
+                    options: ["Mars", "Jupiter", "Saturn", "Neptune"],
+                    correctAnswer: 3,
+                    explanation: "The Kuiper Belt is similar to the asteroid belt but far larger and is home to dwarf planets like Pluto, as well as many comets."
+                },
+                {
+                    question: "What is a 'galaxy cluster'?",
+                    options: ["A small group of stars", "A structure that consists of hundreds to thousands of galaxies bound together by gravity", "Another name for a solar system", "The center of a galaxy"],
+                    correctAnswer: 1,
+                    explanation: "Our Milky Way galaxy is part of a galaxy cluster called the Local Group."
+                },
+                {
+                    question: "What are the Mars rovers, like Curiosity and Perseverance?",
+                    options: ["Manned spacecraft that orbit Mars", "Telescopes that look at Mars from Earth", "Robotic, car-sized vehicles designed to explore the surface of Mars", "Satellites that map the Martian surface"],
+                    correctAnswer: 2,
+                    explanation: "These rovers are remotely operated from Earth and carry a suite of scientific instruments to analyze the Martian geology and environment."
+                },
+                {
+                    question: "What is the primary mission of the Hubble Space Telescope?",
+                    options: ["To search for aliens", "To take high-resolution images of astronomical objects and make deep-space observations", "To land on other planets", "To monitor Earth's weather"],
+                    correctAnswer: 1,
+                    explanation: "By being in orbit above the Earth's distorting atmosphere, Hubble can see the universe with far greater clarity than ground-based telescopes."
+                },
+                {
+                    question: "What is a 'binary star system'?",
+                    options: ["A solar system with two suns", "A star that has a twin planet", "Two stars that orbit around a common center of mass", "A star that flashes on and off"],
+                    correctAnswer: 2,
+                    explanation: "Binary star systems are very common in our galaxy. Sometimes the stars are far apart, and sometimes they are so close they can exchange material."
+                },
+                {
+                    question: "What is an 'exoplanet'?",
+                    options: ["A planet within our Solar System", "A planet that orbits a star outside our Solar System", "A planet that has been ejected from its solar system", "A type of dwarf planet"],
+                    correctAnswer: 1,
+                    explanation: "Astronomers have discovered thousands of exoplanets, which helps us understand how common planetary systems are in the universe."
+                },
+                {
+                    question: "What is the 'cosmic microwave background' (CMB)?",
+                    options: ["The light from the nearest stars", "A type of radiation from black holes", "The faint, leftover radiation from the Big Bang", "The dust between galaxies"],
+                    correctAnswer: 2,
+                    explanation: "The CMB is considered the oldest light in the universe and provides strong evidence for the Big Bang theory."
+                },
+                {
+                    question: "What is a 'light sail' in the context of space travel?",
+                    options: ["A special light on a spacecraft", "A method of propulsion that uses radiation pressure from stars to push large, ultra-thin mirrors", "A landing parachute for Mars", "A type of solar panel"],
+                    correctAnswer: 1,
+                    explanation: "Light sails offer a potential way to travel between stars without needing to carry heavy fuel, as they are pushed by the light from the sun itself."
+                }
+            ]
+        },
+        {
+            title: "Everyday Chemistry",
+            data: [
+                {
+                    question: "What is the chemical process of burning called?",
+                    options: ["Melting", "Oxidation", "Combustion", "Evaporation"],
+                    correctAnswer: 2,
+                    explanation: "Combustion is a rapid reaction between a substance with an oxidant, usually oxygen, to produce heat and light. A fire is an example of combustion."
+                },
+                {
+                    question: "What gas is dissolved in water to make fizzy drinks?",
+                    options: ["Oxygen", "Nitrogen", "Hydrogen", "Carbon Dioxide"],
+                    correctAnswer: 3,
+                    explanation: "Carbon dioxide (CO₂) gas is forced into the liquid under pressure. When you open the bottle, the pressure is released, and the gas escapes as bubbles."
+                },
+                {
+                    question: "Why does baking powder or baking soda make cakes and bread rise?",
+                    options: ["It makes the batter lighter", "It releases a gas (carbon dioxide) when heated or mixed with acid", "It absorbs air from the oven", "It expands when it gets hot"],
+                    correctAnswer: 1,
+                    explanation: "The bubbles of carbon dioxide gas get trapped in the batter or dough, causing it to expand and become light and fluffy."
+                },
+                {
+                    question: "An alloy is a:",
+                    options: ["Type of plastic", "Pure chemical element", "Mixture of a metal with at least one other element", "Type of ceramic"],
+                    correctAnswer: 2,
+                    explanation: "Alloys are made to give metals improved properties. For example, steel is an alloy of iron and carbon, which is much stronger than pure iron."
+                },
+                {
+                    question: "What is the main chemical in vinegar that gives it its sour taste and sharp smell?",
+                    options: ["Citric acid", "Hydrochloric acid", "Acetic acid", "Sulfuric acid"],
+                    correctAnswer: 2,
+                    explanation: "Vinegar is a dilute solution of acetic acid, which is produced by the fermentation of ethanol by acetic acid bacteria."
+                },
+                {
+                    question: "The process of iron rusting is a type of chemical reaction called:",
+                    options: ["Reduction", "Combustion", "Neutralization", "Oxidation"],
+                    correctAnswer: 3,
+                    explanation: "Oxidation is a reaction that involves a substance reacting with oxygen. When iron oxidizes, it forms iron oxide, which we call rust."
+                },
+                {
+                    question: "How does soap work to clean your hands?",
+                    options: ["It physically scrapes the dirt off", "It has molecules with one end that attracts water and another that attracts oil and grease", "It dissolves the dirt", "It kills all germs with acid"],
+                    correctAnswer: 1,
+                    explanation: "The soap molecules trap the oily dirt in tiny bubbles, which can then be washed away by water."
+                },
+                {
+                    question: "What is happening at a molecular level when water boils and turns to steam?",
+                    options: ["The water molecules are breaking apart into hydrogen and oxygen", "The water molecules are gaining enough energy to escape from the liquid and become a gas", "The water molecules are shrinking", "The water molecules are burning"],
+                    correctAnswer: 1,
+                    explanation: "This is a physical change of state. The molecules themselves don't change, they just move much faster and farther apart."
+                },
+                {
+                    question: "The process of using yeast to turn sugar into alcohol and carbon dioxide is called:",
+                    options: ["Distillation", "Pasteurization", "Fermentation", "Oxidation"],
+                    correctAnswer: 2,
+                    explanation: "Fermentation is used to make many foods and drinks, including bread (the CO₂ makes it rise), yogurt, beer, and wine."
+                },
+                {
+                    question: "Why do some fruits, like apples and bananas, turn brown after you cut them?",
+                    options: ["They are drying out", "An enzyme in the fruit reacts with oxygen in the air", "They are reacting with the metal in the knife", "They are rotting instantly"],
+                    correctAnswer: 1,
+                    explanation: "This process is called enzymatic browning. It's a chemical reaction that can be slowed down by adding an acid like lemon juice."
+                },
+                {
+                    question: "What is polymerization?",
+                    options: ["The process of making things magnetic", "The process of joining many small molecules (monomers) together to form a long chain (a polymer)", "The process of separating mixtures", "The process of nuclear fission"],
+                    correctAnswer: 1,
+                    explanation: "Polymerization is how plastics, rubber, and even natural substances like DNA and proteins are formed."
+                },
+                {
+                    question: "What is a pH indicator, like litmus paper, used for?",
+                    options: ["To measure temperature", "To measure the mass of a chemical", "To show whether a substance is an acid or a base", "To measure the speed of a reaction"],
+                    correctAnswer: 2,
+                    explanation: "A pH indicator is a substance that changes color in the presence of an acid or a base. Litmus paper, for example, turns red in acid and blue in base."
+                },
+                {
+                    question: "What is an emulsion?",
+                    options: ["A type of solution", "A stable mixture of two liquids that do not normally mix, like oil and water", "A chemical reaction that produces light", "A type of solid"],
+                    correctAnswer: 1,
+                    explanation: "Mayonnaise is a classic example of an emulsion, where an emulsifier (lecithin from egg yolk) keeps tiny droplets of oil suspended in vinegar."
+                },
+                {
+                    question: "What is happening when salt dissolves in water?",
+                    options: ["The salt is melting", "The salt is reacting with the water to form a new chemical", "The salt crystals are breaking apart into ions that are surrounded by water molecules", "The salt is disappearing"],
+                    correctAnswer: 2,
+                    explanation: "This is a physical process of forming a solution. The salt and water are still there, just mixed together at a molecular level."
+                },
+                {
+                    question: "What is a hydrocarbon?",
+                    options: ["A chemical made from water and carbon", "A compound containing only hydrogen and carbon atoms", "A type of carbohydrate", "A liquid that contains hydrogen"],
+                    correctAnswer: 1,
+                    explanation: "Hydrocarbons are the main components of fossil fuels like petroleum and natural gas. Methane (CH₄) is the simplest hydrocarbon."
+                },
+                {
+                    question: "The process of distillation is used to separate liquids based on their different:",
+                    options: ["Colors", "Densities", "Boiling points", "Viscosities"],
+                    correctAnswer: 2,
+                    explanation: "In distillation, a mixture of liquids is heated. The liquid with the lower boiling point evaporates first, and its vapor is then cooled and condensed back into a separate container."
+                },
+                {
+                    question: "What is a catalyst?",
+                    options: ["A substance that is used up in a chemical reaction", "A substance that slows down a chemical reaction", "A substance that speeds up a chemical reaction without being consumed", "The final product of a chemical reaction"],
+                    correctAnswer: 2,
+                    explanation: "Catalysts make reactions happen faster or at lower temperatures. Enzymes in your body are biological catalysts that help with digestion."
+                },
+                {
+                    question: "Which of these is a chemical change?",
+                    options: ["Chopping wood", "Boiling water", "A firework exploding", "Melting ice"],
+                    correctAnswer: 2,
+                    explanation: "A firework exploding involves rapid combustion reactions that create new substances (light, heat, sound, smoke). The other options are physical changes."
+                },
+                {
+                    question: "What does it mean if a liquid is 'volatile'?",
+                    options: ["It is very thick", "It is dangerous", "It evaporates easily at room temperature", "It does not mix with water"],
+                    correctAnswer: 2,
+                    explanation: "Volatile liquids, like rubbing alcohol or gasoline, have a strong smell because they are constantly turning into a gas that you can inhale."
+                },
+                {
+                    question: "What is the main difference between a saturated and an unsaturated fat?",
+                    options: ["Their color", "Their taste", "The type of chemical bonds in their fatty acid chains", "Where they come from"],
+                    correctAnswer: 2,
+                    explanation: "Saturated fats have only single bonds between carbon atoms and are typically solid at room temperature (like butter). Unsaturated fats have one or more double bonds and are typically liquid (like olive oil)."
+                }
+            ]
+        },
+        {
+            title: "Scientists & Inventions",
+            data: [
+                {
+                    question: "Who is credited with inventing the first practical telephone?",
+                    options: ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"],
+                    correctAnswer: 2,
+                    explanation: "Alexander Graham Bell was awarded the first U.S. patent for the telephone in 1876."
+                },
+                {
+                    question: "Who discovered penicillin, the first widely used antibiotic?",
+                    options: ["Marie Curie", "Louis Pasteur", "Alexander Fleming", "Jonas Salk"],
+                    correctAnswer: 2,
+                    explanation: "Alexander Fleming discovered penicillin in 1928 when he noticed that a mold had accidentally contaminated one of his experiments and was killing bacteria."
+                },
+                {
+                    question: "Which scientist is most famous for his work on gravity and the three laws of motion?",
+                    options: ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Johannes Kepler"],
+                    correctAnswer: 2,
+                    explanation: "Sir Isaac Newton's laws of motion and law of universal gravitation are cornerstones of classical physics."
+                },
+                {
+                    question: "Who developed the first successful polio vaccine?",
+                    options: ["Jonas Salk", "Albert Sabin", "Louis Pasteur", "Robert Koch"],
+                    correctAnswer: 0,
+                    explanation: "Jonas Salk's inactivated polio vaccine was declared safe and effective in 1955, helping to nearly eradicate the devastating disease."
+                },
+                {
+                    question: "What is Thomas Edison's most famous invention?",
+                    options: ["The radio", "The airplane", "The long-lasting, practical electric light bulb", "The television"],
+                    correctAnswer: 2,
+                    explanation: "While others had developed earlier forms of electric lighting, Edison's invention was the first to be commercially practical and long-lasting."
+                },
+                {
+                    question: "James Watson and Francis Crick are credited with discovering the structure of what important molecule?",
+                    options: ["Protein", "Water", "DNA (Deoxyribonucleic acid)", "Glucose"],
+                    correctAnswer: 2,
+                    explanation: "In 1953, they published their model of the DNA double helix, which was a monumental discovery in the history of biology."
+                },
+                {
+                    question: "What did the Wright brothers, Orville and Wilbur, invent?",
+                    options: ["The automobile", "The first successful airplane", "The steam engine", "The helicopter"],
+                    correctAnswer: 1,
+                    explanation: "They are credited with inventing, building, and flying the world's first successful motor-operated airplane on December 17, 1903."
+                },
+                {
+                    question: "Marie Curie was a pioneering physicist and chemist known for her research on:",
+                    options: ["Genetics", "Radioactivity", "Black holes", "Plate tectonics"],
+                    correctAnswer: 1,
+                    explanation: "She was the first woman to win a Nobel Prize and the only person to win it in two different scientific fields (Physics and Chemistry)."
+                },
+                {
+                    question: "What was Galileo Galilei's primary contribution to astronomy?",
+                    options: ["He discovered gravity", "He was the first to use a telescope for astronomical observations, discovering Jupiter's moons and the phases of Venus", "He invented the telescope", "He proved the Earth was flat"],
+                    correctAnswer: 1,
+                    explanation: "His observations provided strong evidence for the Copernican theory that the Earth revolves around the Sun."
+                },
+                {
+                    question: "Who proposed the theory of evolution by natural selection?",
+                    options: ["Gregor Mendel", "Charles Darwin", "Alfred Russel Wallace", "Both B and C"],
+                    correctAnswer: 3,
+                    explanation: "Both Charles Darwin and Alfred Russel Wallace independently conceived of the theory of evolution by natural selection, though Darwin's book 'On the Origin of Species' made it famous."
+                },
+                {
+                    question: "Louis Pasteur developed a process for heating liquids to kill germs. What is this process called?",
+                    options: ["Filtration", "Distillation", "Pasteurization", "Fermentation"],
+                    correctAnswer: 2,
+                    explanation: "Pasteurization is still used today for milk, juice, and other foods to make them safe and extend their shelf life."
+                },
+                {
+                    question: "Johannes Gutenberg is credited with inventing what transformative technology in the 15th century?",
+                    options: ["The steam engine", "The mechanical printing press", "The compass", "The clock"],
+                    correctAnswer: 1,
+                    explanation: "His invention of the printing press with movable type sparked a revolution in communication and the spread of knowledge throughout Europe."
+                },
+                {
+                    question: "Who is considered the 'father of modern genetics' for his experiments with pea plants?",
+                    options: ["Charles Darwin", "James Watson", "Gregor Mendel", "Francis Crick"],
+                    correctAnswer: 2,
+                    explanation: "Gregor Mendel's work demonstrated that the inheritance of certain traits follows particular patterns, now referred to as the laws of Mendelian inheritance."
+                },
+                {
+                    question: "Nikola Tesla was a brilliant inventor whose work was crucial for the development of what system?",
+                    options: ["The direct current (DC) electrical system", "The alternating current (AC) electrical system", "The internet", "The telephone network"],
+                    correctAnswer: 1,
+                    explanation: "Tesla's AC system allowed for the efficient transmission of electricity over long distances and is the basis for the power grid we use today."
+                },
+                {
+                    question: "Who is credited with inventing the World Wide Web?",
+                    options: ["Bill Gates", "Steve Jobs", "Tim Berners-Lee", "Vint Cerf"],
+                    correctAnswer: 2,
+                    explanation: "In 1989, British scientist Tim Berners-Lee invented the World Wide Web while working at CERN. It is different from the internet, which is the network it runs on."
+                },
+                {
+                    question: "Rosalind Franklin's work was critical to understanding the structure of DNA because she produced:",
+                    options: ["The first model of DNA", "The first vaccine using DNA", "High-resolution X-ray diffraction images of DNA", "The chemical formula for DNA"],
+                    correctAnswer: 2,
+                    explanation: "Her famous 'Photo 51' provided crucial evidence for Watson and Crick to develop their double helix model."
+                },
+                {
+                    question: "What did Alfred Nobel, the founder of the Nobel Prizes, invent?",
+                    options: ["The Nobel Prize", "The telegraph", "Dynamite", "The machine gun"],
+                    correctAnswer: 2,
+                    explanation: "Nobel invented dynamite, a safer and more manageable explosive than nitroglycerin. He established the prizes in his will."
+                },
+                {
+                    question: "Who invented the first battery, known as the voltaic pile?",
+                    options: ["Benjamin Franklin", "Michael Faraday", "Alessandro Volta", "Luigi Galvani"],
+                    correctAnswer: 2,
+                    explanation: "In 1800, Alessandro Volta created the first device to produce a steady electric current, paving the way for the field of electrochemistry."
+                },
+                {
+                    question: "What was Stephen Hawking's primary area of scientific research?",
+                    options: ["The study of dinosaurs", "The development of computers", "Cosmology, particularly the study of black holes", "The discovery of new elements"],
+                    correctAnswer: 2,
+                    explanation: "Hawking is famous for his theoretical prediction that black holes emit radiation, often called Hawking radiation."
+                },
+                {
+                    question: "Dmitri Mendeleev is a famous chemist credited with creating the first version of the:",
+                    options: ["pH scale", "Periodic Table of Elements", "Geologic time scale", "Atomic model"],
+                    correctAnswer: 1,
+                    explanation: "Mendeleev arranged the known elements by atomic mass and was able to predict the properties of elements that had not yet been discovered."
+                }
+            ]
+        },
+        {
+            title: "Mixed Science Challenge",
+            data: [
+                {
+                    question: "What is the most abundant gas in Earth's atmosphere?",
+                    options: ["Oxygen", "Argon", "Carbon Dioxide", "Nitrogen"],
+                    correctAnswer: 3,
+                    explanation: "The Earth's atmosphere is composed of about 78% nitrogen, 21% oxygen, and small amounts of other gases."
+                },
+                {
+                    question: "What is the scientific term for the study of fungi?",
+                    options: ["Botany", "Zoology", "Mycology", "Geology"],
+                    correctAnswer: 2,
+                    explanation: "Mycology is the branch of biology concerned with the study of fungi, including their genetic and biochemical properties."
+                },
+                {
+                    question: "What is absolute zero?",
+                    options: ["The freezing point of water", "The temperature at the center of the Sun", "The lowest possible temperature, where all molecular motion ceases", "A temperature of 0 degrees Celsius"],
+                    correctAnswer: 2,
+                    explanation: "Absolute zero is 0 Kelvin, which is equivalent to -273.15 degrees Celsius or -459.67 degrees Fahrenheit."
+                },
+                {
+                    question: "What is a keystone species?",
+                    options: ["The most common species in an ecosystem", "The largest species in an ecosystem", "A species on which other species in an ecosystem largely depend, such that if it were removed the ecosystem would change drastically", "A species that has been introduced to an ecosystem"],
+                    correctAnswer: 2,
+                    explanation: "For example, sea otters are a keystone species because they eat sea urchins, which would otherwise destroy the kelp forests that support many other animals."
+                },
+                {
+                    question: "What is the main difference between weather and climate?",
+                    options: ["Weather is what happens in the summer, climate is in the winter", "Weather describes short-term atmospheric conditions, while climate is the long-term average", "Climate is easier to predict than weather", "There is no difference"],
+                    correctAnswer: 1,
+                    explanation: "A common saying is: 'Climate is what you expect, weather is what you get.'"
+                },
+                {
+                    question: "What is SONAR technology primarily used for?",
+                    options: ["Communicating with satellites", "Taking X-ray images", "Using sound waves to navigate, communicate, or detect objects underwater", "Measuring the speed of light"],
+                    correctAnswer: 2,
+                    explanation: "SONAR (Sound Navigation and Ranging) is used by ships, submarines, and scientists to map the ocean floor and locate objects."
+                },
+                {
+                    question: "What is the scientific name for the human species?",
+                    options: ["Homo erectus", "Homo habilis", "Homo sapiens", "Homo neanderthalensis"],
+                    correctAnswer: 2,
+                    explanation: "In Latin, Homo sapiens means 'wise man'."
+                },
+                {
+                    question: "What is the Doppler effect?",
+                    options: ["The way light bends through a prism", "The change in frequency of a wave in relation to an observer who is moving relative to the wave source", "The resistance of an object to a change in motion", "The process of nuclear fusion"],
+                    correctAnswer: 1,
+                    explanation: "The Doppler effect is why the pitch of a siren on a passing ambulance sounds higher as it approaches you and lower as it moves away."
+                },
+                {
+                    question: "What is dendrochronology?",
+                    options: ["The study of ancient teeth", "The scientific method of dating tree rings to analyze past events", "The study of rock layers", "The mapping of stars"],
+                    correctAnswer: 1,
+                    explanation: "By studying the width and characteristics of tree rings, scientists can learn about past climate conditions like rainfall and temperature."
+                },
+                {
+                    question: "What is the primary function of a plant's xylem and phloem?",
+                    options: ["To produce flowers and seeds", "To perform photosynthesis", "To transport water and nutrients throughout the plant", "To anchor the plant in the soil"],
+                    correctAnswer: 2,
+                    explanation: "The xylem transports water and minerals up from the roots, while the phloem transports food (sugars) created during photosynthesis down to the rest of the plant."
+                },
+                {
+                    question: "What does a litmus test indicate?",
+                    options: ["The temperature of a liquid", "The presence of sugar", "Whether a substance is an acid or a base", "The density of a substance"],
+                    correctAnswer: 2,
+                    explanation: "A litmus test is a simple way to determine acidity. Blue litmus paper turns red under acidic conditions, and red litmus paper turns blue under basic (alkaline) conditions."
+                },
+                {
+                    question: "What is the main difference between an endoskeleton and an exoskeleton?",
+                    options: ["An endoskeleton is stronger", "An exoskeleton is for insects only", "An endoskeleton is an internal skeleton, while an exoskeleton is an external skeleton", "An endoskeleton is made of bone, an exoskeleton is made of shell"],
+                    correctAnswer: 2,
+                    explanation: "Humans and other vertebrates have an endoskeleton. Insects, crustaceans, and other arthropods have a hard, protective exoskeleton."
+                },
+                {
+                    question: "What is the unit of measurement for electrical resistance?",
+                    options: ["Volt", "Ampere", "Watt", "Ohm"],
+                    correctAnswer: 3,
+                    explanation: "Resistance, measured in Ohms (Ω), is a measure of the opposition to current flow in an electrical circuit."
+                },
+                {
+                    question: "What is a biennial plant?",
+                    options: ["A plant that lives for only one year", "A plant that takes two years to complete its biological lifecycle", "A plant that flowers twice a year", "A plant that lives for many years"],
+                    correctAnswer: 1,
+                    explanation: "In the first year, a biennial plant typically grows leaves, stems, and roots, then it goes dormant for the winter. In the second year, it flowers, produces seeds, and then dies. Carrots are an example."
+                },
+                {
+                    question: "What is the chemical formula for table sugar (sucrose)?",
+                    options: ["C₆H₁₂O₆", "H₂O", "NaCl", "C₁₂H₂₂O₁₁"],
+                    correctAnswer: 3,
+                    explanation: "Sucrose is a compound made of 12 carbon atoms, 22 hydrogen atoms, and 11 oxygen atoms. C₆H₁₂O₆ is the formula for glucose."
+                },
+                {
+                    question: "Approximately how fast does sound travel through air at sea level?",
+                    options: ["343 meters per second", "3,430 meters per second", "34 meters per second", "The speed of light"],
+                    correctAnswer: 0,
+                    explanation: "The speed of sound can vary with temperature, humidity, and altitude, but it is roughly 343 m/s, or about 1,235 kilometers per hour."
+                },
+                {
+                    question: "What is the process of a solid changing directly into a gas, bypassing the liquid state?",
+                    options: ["Evaporation", "Condensation", "Deposition", "Sublimation"],
+                    correctAnswer: 3,
+                    explanation: "An example of sublimation is dry ice (solid carbon dioxide) turning directly into carbon dioxide gas at room temperature."
+                },
+                {
+                    question: "What is the name for the part of a wave from one peak to the next?",
+                    options: ["Amplitude", "Frequency", "Trough", "Wavelength"],
+                    correctAnswer: 3,
+                    explanation: "Wavelength is the distance over which a wave's shape repeats. Amplitude is the height of the wave, and frequency is how many waves pass a point per second."
+                },
+                {
+                    question: "What is the primary purpose of a catalyst in a chemical reaction?",
+                    options: ["To be consumed by the reaction", "To slow the reaction down", "To increase the rate of the reaction without being consumed", "To change the color of the products"],
+                    correctAnswer: 2,
+                    explanation: "Catalysts work by lowering the activation energy needed for a reaction to occur, making it happen more easily and quickly."
+                },
+                {
+                    question: "What is the name of the theory that proposes the universe began from a single point of infinite density and temperature?",
+                    options: ["The String Theory", "The Theory of Relativity", "The Big Bang Theory", "The Steady State Theory"],
+                    correctAnswer: 2,
+                    explanation: "The Big Bang theory is the leading cosmological model describing how the universe expanded from an initial state of high density and temperature."
+                }
+            ]
         }
     ];
 
