@@ -2127,143 +2127,500 @@ document.addEventListener('DOMContentLoaded', () => {
                     explanation: "The Big Bang theory is the leading cosmological model describing how the universe expanded from an initial state of high density and temperature."
                 }
             ]
-        }
-    ];
-
-    // DOM Elements
-    const selectionScreen = document.getElementById('selection-screen');
-    const quizScreen = document.getElementById('quiz-screen');
-    const resultsScreen = document.getElementById('results-screen');
-
-    const quizSelectionGrid = document.getElementById('quiz-selection-grid');
-    const nextButton = document.getElementById('next-button');
-    const playAgainButton = document.getElementById('play-again-button');
-
-    const quizTitleEl = document.getElementById('quiz-title');
-    const questionNumberEl = document.getElementById('question-number');
-    const questionTextEl = document.getElementById('question-text');
-    const optionsContainer = document.getElementById('options-container');
-    const feedbackContainer = document.getElementById('feedback-container');
-    const feedbackResultEl = document.getElementById('feedback-result');
-    const feedbackExplanationEl = document.getElementById('feedback-explanation');
-    const finalScoreEl = document.getElementById('final-score');
-
-    // Quiz State
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let currentQuizData = [];
-
-    // --- Functions ---
-
-    function showSelectionScreen() {
-        selectionScreen.classList.remove('hide');
-        quizScreen.classList.add('hide');
-        resultsScreen.classList.add('hide');
-    }
-
-    function populateQuizSelection() {
-        quizSelectionGrid.innerHTML = ''; 
-        allQuizzes.forEach((quiz, index) => {
-            const button = document.createElement('button');
-            button.innerText = quiz.title;
-            button.classList.add('topic-btn');
-            button.dataset.index = index;
-            button.addEventListener('click', selectQuiz);
-            quizSelectionGrid.appendChild(button);
-        });
-    }
-    
-    function selectQuiz(e) {
-        const selectedQuizIndex = parseInt(e.target.dataset.index);
-        currentQuizData = allQuizzes[selectedQuizIndex].data;
-        quizTitleEl.textContent = allQuizzes[selectedQuizIndex].title;
-        startQuiz();
-    }
-
-    function startQuiz() {
-        currentQuestionIndex = 0;
-        score = 0;
-        selectionScreen.classList.add('hide');
-        resultsScreen.classList.add('hide');
-        quizScreen.classList.remove('hide');
-        nextButton.classList.add('hide');
-        showQuestion();
-    }
-
-    function showQuestion() {
-        resetState();
-        const question = currentQuizData[currentQuestionIndex];
-        questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${currentQuizData.length}`;
-        questionTextEl.textContent = question.question;
-
-        question.options.forEach((option, index) => {
-            const button = document.createElement('button');
-            button.innerText = option;
-            button.classList.add('option-btn');
-            button.dataset.index = index;
-            button.addEventListener('click', selectAnswer);
-            optionsContainer.appendChild(button);
-        });
-    }
-
-    function resetState() {
-        while (optionsContainer.firstChild) {
-            optionsContainer.removeChild(optionsContainer.firstChild);
-        }
-        feedbackContainer.classList.add('hide');
-        nextButton.classList.add('hide');
-    }
-
-    function selectAnswer(e) {
-        const selectedButton = e.target;
-        const selectedIndex = parseInt(selectedButton.dataset.index);
-        const correctIndex = currentQuizData[currentQuestionIndex].correctAnswer;
-
-        Array.from(optionsContainer.children).forEach(button => {
-            button.disabled = true;
-        });
-
-        if (selectedIndex === correctIndex) {
-            score++;
-            selectedButton.classList.add('correct');
-            feedbackResultEl.textContent = 'Correct! 🎉';
-        } else {
-            selectedButton.classList.add('wrong');
-            feedbackResultEl.textContent = 'Not quite... 🤔';
-            optionsContainer.children[correctIndex].classList.add('correct');
-        }
-
-        feedbackExplanationEl.textContent = currentQuizData[currentQuestionIndex].explanation;
-        feedbackContainer.classList.remove('hide');
-
-        if (currentQuestionIndex < currentQuizData.length - 1) {
-            nextButton.textContent = 'Next Question';
-        } else {
-            nextButton.textContent = 'Show Results';
-        }
-        nextButton.classList.remove('hide');
-    }
-
-    function handleNextButton() {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentQuizData.length) {
-            showQuestion();
-        } else {
-            showResults();
-        }
-    }
-
-    function showResults() {
-        quizScreen.classList.add('hide');
-        resultsScreen.classList.remove('hide');
-        finalScoreEl.textContent = `${score} / ${currentQuizData.length}`;
-    }
-
-    // --- Event Listeners ---
-    nextButton.addEventListener('click', handleNextButton);
-    playAgainButton.addEventListener('click', showSelectionScreen);
-
-    // --- Initial App Load ---
-    populateQuizSelection();
-    showSelectionScreen();
-});
+        },
+        // --- NEW YEAR 6 QUIZZES START HERE ---
+        {
+            title: "Mixed Science Challenge 2",
+            data: [
+                {
+                    question: "What is the main function of the cell nucleus?",
+                    options: ["To produce energy", "To control the cell's activities and store DNA", "To control what enters and leaves the cell", "To store water"],
+                    correctAnswer: 1,
+                    explanation: "The nucleus acts as the 'brain' or command center of the cell, containing the genetic material (DNA) that directs all of the cell's functions."
+                },
+                {
+                    question: "What type of energy transformation occurs when you turn on a battery-powered torch?",
+                    options: ["Chemical to Electrical to Light", "Electrical to Mechanical to Light", "Kinetic to Potential to Light", "Light to Heat to Chemical"],
+                    correctAnswer: 0,
+                    explanation: "The battery stores chemical energy, which is converted to electrical energy in the circuit, and then the bulb converts the electrical energy into light and heat energy."
+                },
+                {
+                    question: "What is the primary cause of wind?",
+                    options: ["The spinning of the Earth", "The gravitational pull of the Moon", "Uneven heating of the Earth's surface by the sun", "Trees moving back and forth"],
+                    correctAnswer: 2,
+                    explanation: "The sun heats some parts of the Earth more than others. This creates differences in air pressure, and air moves from high-pressure areas to low-pressure areas, creating wind."
+                },
+                {
+                    question: "Is saltwater a mixture or a compound?",
+                    options: ["Compound, because the salt is bonded to the water", "Mixture, because the salt and water are not chemically bonded", "Neither", "Both"],
+                    correctAnswer: 1,
+                    explanation: "Saltwater is a mixture (specifically, a solution) because the salt and water can be separated by physical means, like evaporation, and they retain their original properties."
+                },
+                {
+                    question: "Why does the planet Mars appear red?",
+                    options: ["It is very hot", "It is covered in red plants", "Its surface contains a lot of iron oxide, or rust", "It has a red atmosphere"],
+                    correctAnswer: 2,
+                    explanation: "The iron minerals in the Martian soil have rusted over billions of years, giving the surface its characteristic reddish color."
+                },
+                {
+                    question: "Which of these is a key difference between an amphibian and a reptile?",
+                    options: ["Amphibians have backbones, reptiles do not", "Amphibians have smooth, moist skin, while reptiles have scales", "Reptiles lay eggs, amphibians do not", "Reptiles are warm-blooded"],
+                    correctAnswer: 1,
+                    explanation: "Amphibians (like frogs) typically have permeable skin and live part of their lives in water, while reptiles (like lizards) have dry, scaly skin to prevent water loss."
+                },
+                {
+                    question: "What is the unit of measurement for electric current?",
+                    options: ["Volt", "Ohm", "Watt", "Ampere (Amp)"],
+                    correctAnswer: 3,
+                    explanation: "Amperes measure the rate of flow of electric charge. Volts measure electric potential, and Ohms measure resistance."
+                },
+                {
+                    question: "The process of a gas changing directly into a solid, skipping the liquid phase, is called:",
+                    options: ["Sublimation", "Condensation", "Deposition", "Evaporation"],
+                    correctAnswer: 2,
+                    explanation: "Deposition is the opposite of sublimation. An example is frost forming on a cold window on a winter morning."
+                },
+                {
+                    question: "A substance with a pH of 2 is considered:",
+                    options: ["Strongly acidic", "Slightly acidic", "Neutral", "Strongly basic"],
+                    correctAnswer: 0,
+                    explanation: "The pH scale runs from 0 to 14. Anything below 7 is acidic, and the lower the number, the stronger the acid. Lemon juice has a pH of about 2."
+                },
+                {
+                    question: "What is a light-year a measure of?",
+                    options: ["Time", "Speed", "Brightness", "Distance"],
+                    correctAnswer: 3,
+                    explanation: "A light-year is the vast distance that light travels in one year. It's used to measure the immense distances between stars and galaxies."
+                },
+                {
+                    question: "What are the main parts of the human circulatory system?",
+                    options: ["Brain, spinal cord, nerves", "Stomach, intestines, liver", "Heart, blood vessels, blood", "Lungs, trachea, diaphragm"],
+                    correctAnswer: 2,
+                    explanation: "The circulatory system is responsible for transporting oxygen, nutrients, and hormones to cells and removing waste products like carbon dioxide."
+                },
+                {
+                    question: "A staircase is a modified form of which simple machine?",
+                    options: ["Lever", "Pulley", "Inclined Plane", "Wheel and Axle"],
+                    correctAnswer: 2,
+                    explanation: "A staircase is essentially a series of inclined planes (the steps) that make it easier to move between different heights."
+                },
+                {
+                    question: "What is the name for the molten rock that erupts from a volcano?",
+                    options: ["Magma", "Lava", "Sediment", "Igneous rock"],
+                    correctAnswer: 1,
+                    explanation: "When molten rock is beneath the Earth's surface, it is called magma. Once it reaches the surface, it is called lava."
+                },
+                {
+                    question: "What is the chemical symbol for the element Helium?",
+                    options: ["H", "He", "Hm", "Hl"],
+                    correctAnswer: 1,
+                    explanation: "He is the symbol for Helium, the second most abundant element in the universe. H is the symbol for Hydrogen."
+                },
+                {
+                    question: "A group of stars that form a recognizable pattern in the sky is called a:",
+                    options: ["Galaxy", "Solar System", "Constellation", "Nebula"],
+                    correctAnswer: 2,
+                    explanation: "Constellations, like Orion or the Big Dipper, are patterns that humans have identified for thousands of years to help with navigation and storytelling."
+                },
+                {
+                    question: "What is the primary role of chlorophyll in plants?",
+                    options: ["To absorb water", "To give the plant structure", "To absorb sunlight for photosynthesis", "To attract insects"],
+                    correctAnswer: 2,
+                    explanation: "Chlorophyll is the green pigment in plants that captures the light energy needed to convert carbon dioxide and water into food (glucose)."
+                },
+                {
+                    question: "What is the force that pulls objects towards the center of the Earth?",
+                    options: ["Magnetism", "Friction", "Air Resistance", "Gravity"],
+                    correctAnswer: 3,
+                    explanation: "Gravity is the universal force of attraction between all matter. The Earth's large mass creates a strong gravitational pull."
+                },
+                {
+                    question: "The preserved remains of an ancient organism, often found in rock, are called:",
+                    options: ["A mineral", "A fossil", "A sediment", "A crystal"],
+                    correctAnswer: 1,
+                    explanation: "Fossils give us clues about life on Earth millions of years ago, including what dinosaurs looked like and how they lived."
+                },
+                {
+                    question: "What are the three most common states of matter on Earth?",
+                    options: ["Rock, Water, Air", "Solid, Liquid, Gas", "Ice, Water, Steam", "Metal, Wood, Plastic"],
+                    correctAnswer: 1,
+                    explanation: "The state of a substance is determined by how its particles are arranged and how they move. Solid, liquid, and gas are the three fundamental states."
+                },
+                {
+                    question: "What is the name of the largest planet in our solar system?",
+                    options: ["Saturn", "Jupiter", "Earth", "Neptune"],
+                    correctAnswer: 1,
+                    explanation: "Jupiter is a gas giant so massive that all the other planets in the solar system could fit inside it."
+                }
+            ]
+        },
+        {
+            title: "Mixed Science Challenge 3",
+            data: [
+                {
+                    question: "The Law of Conservation of Energy states that energy cannot be created or destroyed, only...",
+                    options: ["...lost as heat.", "...changed from one form to another.", "...used up completely.", "...made more powerful."],
+                    correctAnswer: 1,
+                    explanation: "This fundamental principle means the total amount of energy in an isolated system remains constant over time."
+                },
+                {
+                    question: "What is a key difference between warm-blooded (endothermic) and cold-blooded (ectothermic) animals?",
+                    options: ["Warm-blooded animals live in hot climates", "Cold-blooded animals have colder blood", "Warm-blooded animals generate their own body heat, while cold-blooded animals rely on the environment", "Cold-blooded animals do not need heat"],
+                    correctAnswer: 2,
+                    explanation: "Mammals and birds are warm-blooded, maintaining a constant internal body temperature. Reptiles and fish are cold-blooded, and their body temperature changes with their surroundings."
+                },
+                {
+                    question: "An element is a pure substance that...",
+                    options: ["...is made of two or more types of atoms.", "...can be broken down into simpler substances by chemical means.", "...cannot be broken down into simpler substances by chemical means.", "...is always a metal."],
+                    correctAnswer: 2,
+                    explanation: "Elements, like oxygen, iron, and gold, are the basic building blocks of matter. They are defined by the number of protons in their atoms."
+                },
+                {
+                    question: "What is the difference between weathering and erosion?",
+                    options: ["Weathering is caused by wind, erosion is by water", "Weathering breaks down rocks, while erosion moves the broken pieces", "Erosion happens to mountains, weathering happens to rivers", "They are the same process"],
+                    correctAnswer: 1,
+                    explanation: "Weathering is the 'breaking' process (e.g., ice cracking a rock), and erosion is the 'taking' process (e.g., a river carrying the pieces away)."
+                },
+                {
+                    question: "A nebula is a giant cloud of dust and gas in space and is often referred to as a:",
+                    options: ["'Star Graveyard'", "'Star Nursery'", "'Galactic Center'", "'Black Hole'"],
+                    correctAnswer: 1,
+                    explanation: "Gravity can cause clumps of dust and gas in a nebula to collapse, eventually forming new stars and planetary systems."
+                },
+                {
+                    question: "What is the difference between an electrical conductor and an insulator?",
+                    options: ["Conductors are metals, insulators are plastics", "Conductors allow electricity to flow easily, while insulators resist the flow of electricity", "Insulators are used in power lines", "Conductors are safer than insulators"],
+                    correctAnswer: 1,
+                    explanation: "Metals like copper are good conductors, which is why they are used in wires. Rubber and plastic are good insulators, used for safety."
+                },
+                {
+                    question: "What is the primary function of the human respiratory system?",
+                    options: ["To pump blood", "To break down food", "To bring oxygen into the body and remove carbon dioxide", "To control movement"],
+                    correctAnswer: 2,
+                    explanation: "The lungs are the main organs of the respiratory system, where the vital exchange of gases between the air and the blood takes place."
+                },
+                {
+                    question: "What happens to water molecules when water freezes into ice?",
+                    options: ["They move faster", "They stop moving completely", "They arrange themselves into a fixed, crystalline structure", "They break apart"],
+                    correctAnswer: 2,
+                    explanation: "As water cools, the molecules slow down and lock into a hexagonal lattice structure, which is why ice is less dense than liquid water and floats."
+                },
+                {
+                    question: "What are tectonic plates?",
+                    options: ["A type of dinner plate", "Large pieces of Earth's lithosphere that move slowly over the mantle", "Layers of sedimentary rock", "The different layers of the atmosphere"],
+                    correctAnswer: 1,
+                    explanation: "The movement, collision, and separation of these plates are responsible for earthquakes, volcanoes, and the formation of mountains."
+                },
+                {
+                    question: "A solar eclipse occurs when...",
+                    options: ["...the Earth passes between the Sun and Moon.", "...the Moon passes between the Sun and Earth.", "...a planet passes in front of the Sun.", "...the Sun gets dimmer."],
+                    correctAnswer: 1,
+                    explanation: "During a total solar eclipse, the Moon completely blocks the Sun's light, casting a shadow on a small part of the Earth."
+                },
+                {
+                    question: "How does a lever, like a crowbar, make it easier to lift a heavy object?",
+                    options: ["It reduces the object's weight", "It increases the force you apply over a longer distance", "It uses magnetism", "It gets rid of friction"],
+                    correctAnswer: 1,
+                    explanation: "A lever provides a mechanical advantage by allowing you to apply a smaller force over a larger distance to move a heavy load a shorter distance."
+                },
+                {
+                    question: "In genetics, a dominant trait is one that...",
+                    options: ["...is the most common in a population.", "...is always the best trait to have.", "...will appear in an offspring if at least one parent contributes the allele for it.", "...can only appear if both parents contribute the allele for it."],
+                    correctAnswer: 2,
+                    explanation: "For example, the allele for brown eyes is dominant over the allele for blue eyes. A recessive trait (like blue eyes) only appears if an individual inherits two copies of the recessive allele."
+                },
+                {
+                    question: "A solution, such as sugar dissolved in water, is a type of:",
+                    options: ["Compound", "Element", "Homogeneous mixture", "Heterogeneous mixture"],
+                    correctAnswer: 2,
+                    explanation: "It is a homogeneous mixture because the dissolved substance (solute) is evenly distributed throughout the solvent, and you cannot see the individual components."
+                },
+                {
+                    question: "The greenhouse effect is a natural process where certain gases in the atmosphere...",
+                    options: ["...block sunlight from reaching Earth.", "...trap heat, keeping the planet warm.", "...create holes in the ozone layer.", "...produce oxygen."],
+                    correctAnswer: 1,
+                    explanation: "While essential for life, an excess of greenhouse gases from human activity is causing the planet to warm at an accelerated rate."
+                },
+                {
+                    question: "What is the name of the spiral galaxy that contains our solar system?",
+                    options: ["Andromeda", "Triangulum", "The Milky Way", "Centaurus A"],
+                    correctAnswer: 2,
+                    explanation: "Our sun is just one of billions of stars in the vast, swirling collection of stars, gas, and dust known as the Milky Way."
+                },
+                {
+                    question: "Friction is a force that...",
+                    options: ["...pulls objects downward.", "...pushes objects upward.", "...opposes motion between two surfaces in contact.", "...keeps planets in orbit."],
+                    correctAnswer: 2,
+                    explanation: "Friction is what allows you to walk without slipping and what slows down a rolling ball. It converts kinetic energy into heat."
+                },
+                {
+                    question: "Besides anchoring the plant, what is the other main function of a plant's roots?",
+                    options: ["To perform photosynthesis", "To absorb water and nutrients from the soil", "To produce seeds", "To store sunlight"],
+                    correctAnswer: 1,
+                    explanation: "Roots have tiny root hairs that greatly increase their surface area, allowing them to efficiently absorb the water and minerals the plant needs to survive."
+                },
+                {
+                    question: "What is the chemical formula for carbon dioxide?",
+                    options: ["CO", "H₂O", "O₂", "CO₂"],
+                    correctAnswer: 3,
+                    explanation: "The formula CO₂ indicates that each molecule of carbon dioxide is made of one carbon atom chemically bonded to two oxygen atoms."
+                },
+                {
+                    question: "Which of the following is an example of a non-renewable resource?",
+                    options: ["Wind power", "Solar energy", "Coal", "Geothermal energy"],
+                    correctAnswer: 2,
+                    explanation: "Coal is a fossil fuel that formed over millions of years and cannot be replaced on a human timescale, making it non-renewable."
+                },
+                {
+                    question: "A dwarf planet, like Pluto, is different from a planet because it...",
+                    options: ["...does not orbit the Sun.", "...is not spherical.", "...has not cleared its orbital path of other objects.", "...has no moons."],
+                    correctAnswer: 2,
+                    explanation: "One of the key criteria for being a planet is that it must have enough gravitational dominance to clear its orbit of other debris. Pluto shares its orbit with other objects in the Kuiper Belt."
+                }
+            ]
+        },
+        {
+            title: "Mixed Science Challenge 4",
+            data: [
+                {
+                    question: "What is the main difference between an atom and a molecule?",
+                    options: ["Molecules are smaller than atoms", "An atom is the smallest unit of an element, while a molecule is two or more atoms bonded together", "Atoms are only found in metals", "Molecules are always liquids"],
+                    correctAnswer: 1,
+                    explanation: "For example, you can have an atom of oxygen (O), but when two are bonded together, they form a molecule of oxygen (O₂), which is what we breathe."
+                },
+                {
+                    question: "How is a metamorphic rock, like marble, formed?",
+                    options: ["From the cooling of lava", "From the compaction of sediment", "From existing rock being changed by intense heat and pressure", "From the evaporation of water"],
+                    correctAnswer: 2,
+                    explanation: "Metamorphism occurs deep within the Earth's crust, transforming rocks like limestone into marble or shale into slate."
+                },
+                {
+                    question: "What is the role of the cerebellum in the human brain?",
+                    options: ["Controlling thoughts and memory", "Regulating heartbeat and breathing", "Coordinating voluntary movement, balance, and posture", "Processing vision and hearing"],
+                    correctAnswer: 2,
+                    explanation: "Located at the back of the brain, the cerebellum is crucial for smooth, coordinated movements like walking, writing, and playing sports."
+                },
+                {
+                    question: "In a light or sound wave, what is the relationship between wavelength and frequency?",
+                    options: ["They are not related", "As wavelength increases, frequency increases", "As wavelength increases, frequency decreases", "They are the same thing"],
+                    correctAnswer: 2,
+                    explanation: "For a wave traveling at a constant speed, a longer wavelength means fewer wave crests will pass a point each second (lower frequency), and vice versa."
+                },
+                {
+                    question: "What is a black hole's 'event horizon'?",
+                    options: ["The center of the black hole", "The edge of the galaxy", "The 'point of no return,' beyond which nothing can escape the black hole's gravity", "A ring of stars around the black hole"],
+                    correctAnswer: 2,
+                    explanation: "Once an object or light crosses the event horizon, it is gravitationally bound to the black hole and cannot get out."
+                },
+                {
+                    question: "A chemical reaction is a process that...",
+                    options: ["...always produces heat.", "...rearranges the atoms of substances to form new substances.", "...mixes substances without changing them.", "...changes the state of a substance, like melting."],
+                    correctAnswer: 1,
+                    explanation: "In a chemical reaction, the original substances (reactants) are transformed into new substances (products) with different properties. Bonds between atoms are broken and new bonds are formed."
+                },
+                {
+                    question: "What is the jet stream?",
+                    options: ["The exhaust from a jet airplane", "A fast-flowing, narrow air current found in the atmosphere", "A warm ocean current", "A type of cloud"],
+                    correctAnswer: 1,
+                    explanation: "Jet streams are like rivers of wind high above the Earth that steer weather systems and affect air travel."
+                },
+                {
+                    question: "What is the primary function of white blood cells in the human body?",
+                    options: ["To carry oxygen", "To help blood clot", "To fight infection and disease", "To transport nutrients"],
+                    correctAnswer: 2,
+                    explanation: "White blood cells are a key part of the immune system, identifying and destroying foreign invaders like bacteria and viruses."
+                },
+                {
+                    question: "Potential energy is...",
+                    options: ["...the energy of motion.", "...the energy of heat.", "...the energy of light.", "...stored energy based on an object's position or state."],
+                    correctAnswer: 3,
+                    explanation: "A stretched rubber band, a book on a high shelf, and a battery all have potential energy that can be converted into other forms of energy."
+                },
+                {
+                    question: "What is a key difference between a star and a planet?",
+                    options: ["Stars are hotter than planets", "Stars produce their own light through nuclear fusion, while planets reflect light", "Planets are always larger than stars", "Stars are solid, while planets are made of gas"],
+                    correctAnswer: 1,
+                    explanation: "Our Sun is a star, generating immense energy. We see planets like Venus or Jupiter because they reflect the Sun's light."
+                },
+                {
+                    question: "An acid is a substance that...",
+                    options: ["...has a pH greater than 7.", "...tastes sweet.", "...produces hydrogen ions in water and has a pH less than 7.", "...feels slippery."],
+                    correctAnswer: 2,
+                    explanation: "Acids, like lemon juice and vinegar, typically have a sour taste. Bases, which are the opposite, often feel slippery and have a pH greater than 7."
+                },
+                {
+                    question: "What is a watershed (or drainage basin)?",
+                    options: ["A building that stores water", "An area of land where all the water drains into a common river, lake, or ocean", "A type of dam", "An underground lake"],
+                    correctAnswer: 1,
+                    explanation: "Watersheds can be very small, like the area that drains into a small creek, or very large, like the entire area that drains into the Mississippi River."
+                },
+                {
+                    question: "The scientific system of naming and classifying organisms into groups is called:",
+                    options: ["Taxonomy", "Genetics", "Ecology", "Evolution"],
+                    correctAnswer: 0,
+                    explanation: "Taxonomy organizes living things into a hierarchy of groups, such as Kingdom, Phylum, Class, Order, Family, Genus, and Species."
+                },
+                {
+                    question: "Inertia is an object's...",
+                    options: ["...attraction to other objects.", "...speed.", "...resistance to a change in its state of motion.", "...weight."],
+                    correctAnswer: 2,
+                    explanation: "Inertia is why it's harder to start pushing a heavy box than a light one, and also why it's harder to stop it once it's moving."
+                },
+                {
+                    question: "A galaxy is a massive, gravitationally bound system of:",
+                    options: ["Planets and moons", "Comets and asteroids", "Stars, stellar remnants, interstellar gas, dust, and dark matter", "Only solar systems"],
+                    correctAnswer: 2,
+                    explanation: "Galaxies range in size from dwarfs with a few billion stars to giants with one hundred trillion stars."
+                },
+                {
+                    question: "A polymer is a large molecule made up of many repeating smaller units called:",
+                    options: ["Atoms", "Monomers", "Crystals", "Alloys"],
+                    correctAnswer: 1,
+                    explanation: "Plastics are common synthetic polymers. Natural polymers include DNA, proteins, and starch."
+                },
+                {
+                    question: "What is the main reason for the seasons on Earth?",
+                    options: ["The Earth's changing distance from the Sun", "The tilt of the Earth's axis relative to its orbit", "The amount of cloud cover", "The changing speed of the Earth's rotation"],
+                    correctAnswer: 1,
+                    explanation: "When a hemisphere is tilted towards the Sun, it receives more direct sunlight and experiences summer. When it's tilted away, it experiences winter."
+                },
+                {
+                    question: "Symbiosis is a close, long-term interaction between two different species. Mutualism is a type of symbiosis where:",
+                    options: ["...one species benefits and the other is harmed.", "...both species benefit.", "...one species benefits and the other is unaffected.", "...both species are harmed."],
+                    correctAnswer: 1,
+                    explanation: "A classic example of mutualism is the relationship between bees and flowers; the bees get nectar, and the flowers get pollinated."
+                },
+                {
+                    question: "Sound is a type of energy that travels as a:",
+                    options: ["Light wave", "Transverse wave", "Mechanical wave that requires a medium", "Wave that can travel in a vacuum"],
+                    correctAnswer: 2,
+                    explanation: "Sound needs a medium (solid, liquid, or gas) to travel because it is the vibration of particles. This is why there is no sound in the vacuum of space."
+                },
+                {
+                    question: "The Kuiper Belt is a region of the Solar System beyond Neptune that is home to:",
+                    options: ["Gas giant planets", "Rocky terrestrial planets", "Many comets, asteroids, and dwarf planets like Pluto", "The Oort Cloud"],
+                    correctAnswer: 2,
+                    explanation: "The Kuiper Belt is a vast, icy debris field left over from the formation of the solar system."
+                }
+            ]
+        },
+        {
+            title: "Mixed Science Challenge 5",
+            data: [
+                {
+                    question: "What is DNA (Deoxyribonucleic acid)?",
+                    options: ["A type of protein", "The powerhouse of the cell", "A molecule that carries the genetic instructions for life", "A sugar used for energy"],
+                    correctAnswer: 2,
+                    explanation: "DNA contains the blueprint for building and maintaining an organism, passed down from one generation to the next."
+                },
+                {
+                    question: "What is the difference between mass and weight?",
+                    options: ["They are the same thing", "Mass is the amount of matter in an object, while weight is the force of gravity on that mass", "Mass is measured in Newtons, weight is in kilograms", "Weight is constant, but mass can change"],
+                    correctAnswer: 1,
+                    explanation: "Your mass would be the same on Earth and the Moon, but your weight would be much less on the Moon because of its weaker gravity."
+                },
+                {
+                    question: "A compound is a substance formed when...",
+                    options: ["...two substances are mixed together.", "...an element dissolves in a liquid.", "...two or more different elements are chemically bonded together.", "...an element changes state."],
+                    correctAnswer: 2,
+                    explanation: "Water (H₂O) is a compound because hydrogen and oxygen atoms are chemically joined. Saltwater is a mixture, not a compound."
+                },
+                {
+                    question: "What is the water table?",
+                    options: ["A table for holding water", "The surface of the ocean", "The upper level of an underground surface in which the soil or rocks are permanently saturated with water", "A type of cloud"],
+                    correctAnswer: 2,
+                    explanation: "The water table can rise or fall depending on rainfall and how much groundwater is being used."
+                },
+                {
+                    question: "A supernova is...",
+                    options: ["...the birth of a new star.", "...a very large, stable star.", "...the explosive death of a massive star.", "...a cluster of galaxies."],
+                    correctAnswer: 2,
+                    explanation: "For a short time, a supernova can outshine its entire galaxy and radiate more energy than our sun will in its entire lifetime."
+                },
+                {
+                    question: "What is the main difference between an artery and a vein?",
+                    options: ["Arteries are larger than veins", "Arteries carry blood away from the heart, while veins carry blood toward the heart", "Arteries carry deoxygenated blood", "Veins are part of the nervous system"],
+                    correctAnswer: 1,
+                    explanation: "Arteries typically carry oxygen-rich blood (except for the pulmonary artery), while veins typically carry oxygen-poor blood (except for the pulmonary vein)."
+                },
+                {
+                    question: "In physics, acceleration is defined as:",
+                    options: ["The top speed of an object", "The distance an object travels", "The rate of change of velocity", "The force acting on an object"],
+                    correctAnswer: 2,
+                    explanation: "Acceleration can be speeding up, slowing down (deceleration), or changing direction. Even a car turning a corner at a constant speed is accelerating."
+                },
+                {
+                    question: "The Periodic Table of Elements organizes elements based on their:",
+                    options: ["Atomic number and chemical properties", "Date of discovery", "Abundance on Earth", "Color and shininess"],
+                    correctAnswer: 0,
+                    explanation: "Elements in the same column (group) have similar chemical properties because they have the same number of electrons in their outermost shell."
+                },
+                {
+                    question: "A biome is a large community of vegetation and wildlife adapted to a specific:",
+                    options: ["Country", "Continent", "Climate", "Mountain range"],
+                    correctAnswer: 2,
+                    explanation: "Examples of biomes include deserts, tropical rainforests, tundras, and grasslands, each with its own characteristic plants and animals."
+                },
+                {
+                    question: "What is the difference between a meteoroid, a meteor, and a meteorite?",
+                    options: ["They are different sizes", "A meteoroid is in space, a meteor is the 'shooting star' in the atmosphere, and a meteorite is what lands on Earth", "They are made of different materials", "They are all the same thing"],
+                    correctAnswer: 1,
+                    explanation: "A handy way to remember: 'oid' is out in the void, 'ite' is the one you might find on a site."
+                },
+                {
+                    question: "A food web is a more realistic model of an ecosystem than a food chain because it shows that...",
+                    options: ["...all animals eat plants.", "...most organisms eat more than one type of food and are eaten by more than one type of predator.", "...energy flows in a single line.", "...decomposers are not important."],
+                    correctAnswer: 1,
+                    explanation: "Food webs show the complex, interconnected feeding relationships within an ecosystem."
+                },
+                {
+                    question: "Static electricity is the result of...",
+                    options: ["...a continuous flow of electrons.", "...a chemical reaction.", "...an imbalance of positive and negative charges on the surface of an object.", "...magnetism."],
+                    correctAnswer: 2,
+                    explanation: "This imbalance is often created by two objects rubbing together (friction), which can transfer electrons from one object to the other."
+                },
+                {
+                    question: "In chemistry, a catalyst is a substance that...",
+                    options: ["...is the main product of a reaction.", "...slows down a reaction.", "...speeds up a reaction without being used up itself.", "...changes color during a reaction."],
+                    correctAnswer: 2,
+                    explanation: "Catalysts are like helpers for chemical reactions. Enzymes in your body are biological catalysts that speed up digestion."
+                },
+                {
+                    question: "The Richter scale is a logarithmic scale used to measure the:",
+                    options: ["Wind speed of a hurricane", "Magnitude (energy released) of an earthquake", "Loudness of a sound", "Acidity of a substance"],
+                    correctAnswer: 1,
+                    explanation: "Because it's logarithmic, a magnitude 6 earthquake is 10 times more powerful than a magnitude 5 earthquake."
+                },
+                {
+                    question: "What are the main components of a comet?",
+                    options: ["Liquid rock and metal", "A solid core of iron and nickel", "A nucleus of ice, dust, and rock, with a tail of gas and dust", "Pure hydrogen gas"],
+                    correctAnswer: 2,
+                    explanation: "Often called 'dirty snowballs,' comets develop a glowing coma (head) and a long tail when they get close to the Sun and the ice begins to vaporize."
+                },
+                {
+                    question: "What is the primary function of the mitochondria in a cell?",
+                    options: ["To store genetic information", "To control what enters and leaves the cell", "To perform cellular respiration and generate energy (ATP)", "To create proteins"],
+                    correctAnswer: 2,
+                    explanation: "The mitochondria are often called the 'powerhouses' of the cell because they convert food into usable energy."
+                },
+                {
+                    question: "Buoyancy is the...",
+                    options: ["...downward force of gravity.", "...upward force exerted by a fluid on a submerged object.", "...tendency of an object to resist motion.", "...stickiness of a liquid."],
+                    correctAnswer: 1,
+                    explanation: "An object will float if the buoyant force pushing it up is equal to or greater than the force of gravity pulling it down."
+                },
+                {
+                    question: "Combustion is the scientific term for:",
+                    options: ["Melting", "Freezing", "Dissolving", "Burning"],
+                    correctAnswer: 3,
+                    explanation: "Combustion is a chemical process that requires fuel, oxygen, and heat. It releases energy in the form of heat and light."
+                },
+                {
+                    question: "The theory of continental drift, proposed by Alfred Wegener, suggests that...",
+                    options: ["...the continents are fixed in place.", "...the continents were once joined together in a single supercontinent and have since drifted apart.", "...new continents are constantly being formed.", "...the oceans are getting smaller."],
+                    correctAnswer: 1,
+                    explanation: "This idea is now part of the broader theory of plate tectonics, which explains how and why the continents move."
+                },
+                {
+                    question: "An exoplanet is defined as:",
+                    options: ["A planet within our own Solar System", "A planet that has been proven to have life", "A planet that orbits a star outside of our Solar System", "A moon t
