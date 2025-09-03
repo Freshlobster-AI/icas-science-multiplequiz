@@ -12,25 +12,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     explanation: "The correct answer is B. The clues (muddy paws, hiding dog, empty cake plate) suggest she is upset about the situation."
                 },
                 {
-                    question: "From the first passage, what character trait best describes Rusty in this story?",
+                    question: "Maya walked into the kitchen and saw muddy paw prints all over the clean floor. Her dog, Rusty, was hiding under the table, his tail tucked between his legs. On the counter, an empty cake plate sat where a chocolate birthday cake had been just an hour ago. Maya sighed and put her hands on her hips. what character trait best describes Rusty in this story?",
                     options: ["Brave", "Guilty", "Angry", "Proud"],
                     correctAnswer: 1,
                     explanation: "The correct answer is B. Rusty is hiding with his tail between his legs, which shows he feels guilty."
                 },
                 {
-                    question: "From the first passage, why did Rusty hide under the table?",
+                    question: "Maya walked into the kitchen and saw muddy paw prints all over the clean floor. Her dog, Rusty, was hiding under the table, his tail tucked between his legs. On the counter, an empty cake plate sat where a chocolate birthday cake had been just an hour ago. Maya sighed and put her hands on her hips. why did Rusty hide under the table?",
                     options: ["He was playing a game of hide-and-seek.", "He was scared of a loud noise outside.", "He knew he had done something wrong.", "He was waiting for Maya to feed him."],
                     correctAnswer: 2,
                     explanation: "The correct answer is C. Hiding is a common behaviour for a pet that knows it has misbehaved."
                 },
                 {
-                    question: "From the first passage, what is the main problem in this short story?",
+                    question: "Maya walked into the kitchen and saw muddy paw prints all over the clean floor. Her dog, Rusty, was hiding under the table, his tail tucked between his legs. On the counter, an empty cake plate sat where a chocolate birthday cake had been just an hour ago. Maya sighed and put her hands on her hips. what is the main problem in this short story?",
                     options: ["Maya has lost her school bag.", "The kitchen floor is too shiny.", "A birthday cake is missing and there is a mess.", "Rusty the dog is feeling sick."],
                     correctAnswer: 2,
                     explanation: "The correct answer is C. The central issue described is the missing cake and the muddy paw prints."
                 },
                 {
-                    question: "From the first passage, what do you think Maya will do next?",
+                    question: "Maya walked into the kitchen and saw muddy paw prints all over the clean floor. Her dog, Rusty, was hiding under the table, his tail tucked between his legs. On the counter, an empty cake plate sat where a chocolate birthday cake had been just an hour ago. Maya sighed and put her hands on her hips. what do you think Maya will do next?",
                     options: ["Bake another cake.", "Take Rusty for a walk.", "Give Rusty a treat.", "Clean up the mess and talk to Rusty."],
                     correctAnswer: 3,
                     explanation: "The correct answer is D. Based on her sighing and putting her hands on her hips, the most logical next step is to address the problem."
@@ -1391,4 +1391,5 @@ document.addEventListener('DOMContentLoaded', () => {
     populateQuizSelection();
     showSelectionScreen();
 });
+
 
